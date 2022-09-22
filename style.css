@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 img {
@@ -10,30 +11,105 @@ img {
   height: auto;
 }
 
-a {
-  text-decoration: none;
-}
-
 /*======== VARIABLES ========*/
 :root {
   --header-height: 4.5rem;
 
-  /* colors */
-  --hue: 159;
-  /* HSL color mode */
-  --base-color: hsl(var(--hue) 36% 57%);
-  --base-color-second: hsl(var(--hue) 65% 88%);
-  --base-color-alt: hsl(var(--hue) 57% 53%);
-  --title-color: hsl(var(--hue) 41% 10%);
-  --text-color: hsl(0 0% 46%);
-  --text-color-light: hsl(0 0% 98%);
-  --body-color: hsl(0 0% 98%);
+  --background-color: #fafafa;
+  --background-menu: #2569f1;
+  --title-text: #272829;
+  --text-menu: #ffffff;
 
   /* fonts */
   --title-font-size: 1.875rem;
 }
 
+/*======== BASE SITE ========*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
 body {
-  background: var(--body-color);
-  font-family: "Poppins", sans-serif;
+  font-family: 'DM Sans', sans-serif;
+  color: var(--text-color);
+  background: var(--background-color);
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.section {
+  padding: 5rem 0;
+}
+
+.title {
+  font: 700 var(--title-font-size) 'Poppins', sans-serif;
+  color: var(--title-color);
+  -webkit-font-smoothing: auto;
+}
+
+/*======== MENU INÍCIO ========*/
+.navbar {
+  font-family: 'Poppins', sans-serif;
+  background: var(--background-menu);
+  position: fixed;
+  width: 100%;
+  padding: 15px 0;
+}
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a {
+  color: var(--text-menu);
+  font-size: 35px;
+  font-weight: 500;
+}
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+.navbar .menu li a {
+  color: var(--text-menu);
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+}
+
+/*======== HOME INÍCIO ========*/
+.section-home {
+    display: flex;
+    height: 100vh;
+    background: url(assets/banner-fundo.jpg) center no-repeat;
+    background-size: cover; /* Regula a imagem sem achatar */
+    color: var(--text-menu);
+    min-height: 500px;
+}
+
+.section-home .max-width {
+  margin: auto 0 auto 40px;
+}
+
+.section-home .home-content .text-1 {
+  font-size: 4.68rem;
+  font-weight: 500;
+  margin-left: -0.18rem;
+}
+
+.section-home .home-content .text-2 {
+  font-size: 2.5rem;
+  margin: 5px 0;
+}
+.section-home .home-content .text-2 span {
+  color: var(--background-menu);
 }
