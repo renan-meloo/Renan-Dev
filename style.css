@@ -56,7 +56,8 @@ body {
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.35rem;
+  font-weight: 400;
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -70,7 +71,7 @@ p {
   font: 700 var(--title-font-size) 'Poppins', sans-serif;
   color: var(--title-color);
   -webkit-font-smoothing: auto;
-  margin-bottom: 3.75rem;
+  margin-bottom: 3rem;
   padding-bottom: 1.25rem;
   text-align: center;
   text-transform: uppercase;
@@ -100,7 +101,7 @@ p {
 }
 
 .title-secondary {
-  font: 500 var(--title-font-size) 'Poppins', sans-serif;
+  font: 600 1.8rem 'Poppins', sans-serif;
   color: var(--title-secondary);
   -webkit-font-smoothing: auto;
 }
@@ -162,8 +163,9 @@ p {
 /*======== MENU MOBILE ========*/
 .menu-btn {
   color: var(--background-color);
-  font-size: 26px;
+  font-size: 28px;
   cursor: pointer;
+  display: none;
 }
 
 /*======== SESSÃO HOME ========*/
@@ -177,17 +179,17 @@ p {
 }
 
 .section-home .max-width {
-  margin: auto 0 auto 40px;
+  margin: auto 0 auto 7rem;
 }
 
 .section-home .home-content .text-1 {
-  font-size: 4.68rem;
+  font-size: 5.2rem;
   font-weight: 500;
   margin-left: -0.18rem;
 }
 
 .section-home .home-content .text-2 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   margin: 5px 0;
 }
 .section-home .home-content .text-2 span {
@@ -196,16 +198,18 @@ p {
 }
 
 /*======== SESSÃO SOBRE MIM ========*/
-.about .about-content .left {
-  width: 45%;
-}
-
 .about .about-content .right {
-  width: 55%;
+  width: 58%;
 }
 
 .about .about-content .right .text {
   margin-bottom: 10px;
+}
+
+.about .about-content .left {
+  display: flex;
+  width: 42%;
+  justify-content: center;
 }
 
 .about .about-content .left img {
@@ -220,6 +224,7 @@ p {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  padding: 0 8rem;
 }
 
 /*======== RESPONSIVO ========*/
@@ -227,13 +232,51 @@ p {
   .navbar .max-width {
     margin-left: 0;
   }
+  .about .about-content .left img {
+    width: 24.5rem;
+    height: 24.5rem;
+  }
+   .about .about-content .column {
+    width: 60%;
+  }
+    .about .about-content .left {
+    display: flex;
+    width: 42%;
+    justify-content: center;
+    margin: 0 auto 3.75rem;
+  }
 
+  .about .about-content .right {
+    flex: 100%;
+  }
+
+  .section-home .max-width {
+    margin: auto auto auto auto;
+    align-content: center;
+    align-items: center;
+  }
+  /* .section-home .home-content{
+    margin-left: 16rem;
+  } */
 }
 
 @media (max-width: 1104px){
-  .navbar .max-width {
+  .navbar .menu.btn {
     width: 2.3rem;
     height: 2.3rem;
+    margin-left: 0;
+  }
+  .about .about-content .left img {
+    width: 21.5rem;
+    height: 21.5rem;
+  }
+
+  .about .about-content .right {
+    flex: 100%;
+  }
+
+  p {
+    font-size: 1.30rem;
   }
 }
 
@@ -241,10 +284,14 @@ p {
   .navbar .max-width {
     padding: 0 50px;
   }
+  p {
+    font-size: 1.25rem;
+  }
 }
 
 @media (max-width: 947px){
   .max-width {
+    max-width: 50rem;
     padding: 0 50px;
   }
   .menu-btn {
@@ -253,17 +300,17 @@ p {
   }
   .navbar .menu {
     position: fixed;
-    width: 100%;
-    height: 100vh;
-    left: -100%;
+    width: 30%;
+    height: 60vh;
+    right: -100%;
     top: 0;
-    background: var(--title-text);
-    padding-top: 80px;
+    background: var(--line-title);
+    padding-top: 6rem;
     text-align: center;
     transition: all 0.3s ease;
   }
   .navbar .menu.active {
-    left: 0;
+    right: 0;
   }
 
   .navbar .menu li {
@@ -284,10 +331,11 @@ p {
     margin: 5px 0;
   }
 
-  .about .about-content .column {
-    width: 50%;
+  .about .about-content .right {
+    flex: 100%;
   }
 }
+
 @media (max-width: 690px) {
   .section-home .home-content .text-1 {
     font-size: 3.75rem;
@@ -296,6 +344,10 @@ p {
   .section-home .home-content .text-2 {
     font-size: 2rem;
     margin: 5px 0;
+  }
+
+  .title-secondary {
+    font-size: 1.5rem;
   }
 }
 
