@@ -15,7 +15,7 @@ img {
 :root {
   --header-height: 4.5rem;
   --text-color: #272829;
-  --background-color: #ffffff;
+  --background-color: #F9F9F9;
   --background-menu: #2569f1;
   --title-color: #45505b;
   --title-secondary: #728394;
@@ -34,8 +34,9 @@ html {
 }
 
 .container {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 .section {
   padding: 3.75rem 0;
@@ -112,7 +113,7 @@ p {
   position: fixed;
   width: 100%;
   padding: 20px 0;
-  z-index: 999;
+  z-index: 998;
   transition: all 0.3s ease;
 }
 .navbar.sticky{
@@ -299,27 +300,37 @@ p {
     z-index: 999;
   }
   .navbar .menu {
+    left: -100%;
     position: fixed;
-    width: 30%;
-    height: 60vh;
-    right: -100%;
-    top: 0;
-    background: var(--line-title);
-    padding-top: 6rem;
-    text-align: center;
-    transition: all 0.3s ease;
-  }
+    height: 100vh;
+    width: 100%;
+    z-index: 999;
+    background-color: rgba(0,0,0,0.65);
+    backdrop-filter: blur(10px);
+    top: 0%;
+    animation: appearField 1s;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding-top: 7.5rem;
+    align-items: center;
+    animation: fade 1s;
+
+    align-content: center;
+}
   .navbar .menu.active {
-    right: 0;
+    left: 0;
   }
 
   .navbar .menu li {
     display: block;
   }
   .navbar .menu li a {
-    display: inline-block;
-    margin: 20px 0;
-    font-size: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--text-menu);
+    font-size: 3rem;
+    transition: .3s;
   }
 
   .section-home .home-content .text-1 {
