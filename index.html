@@ -27,10 +27,11 @@
         <ul class="menu">
           <li><a href="#header">Home</a></li>
           <li><a href="#about">Sobre mim</a></li>
+          <li><a href="#skills">Habilidades</a></li>
           <li> <a href="#portfolio">Meus projetos</a></li>
         </ul>
 
-        <div class="menu-btn">
+        <div class="toggle">
           <ion-icon name="menu-outline"></ion-icon>
         </div>
 
@@ -53,39 +54,71 @@
     </section>
     <!-- FIM HOME -->
 
-    <!-- INICIO SOBRE MIM -->
+    <!-- INÍCIO SKILLS -->
     <section class="section about" id="about">
-      <div>
-        <div class="title">
-          <h2>Sobre mim</h2>
+      <div class="title">
+        <h2>Sobre mim</h2>
+      </div>
+
+      <div class="container about-content">
+
+        <div class="column left">
+          <img src="assets/foto.jpg" alt="Foto de Renan">
         </div>
 
-        <div class="container about-content">
+        <div class="column right">
+          <h3 class="title-secondary text">Desenvolvedor Front-end</h3>
+          <p>Olá, me chamo Renan, muito prazer! Sou um estudante em desenvolvimento Front-end apaixonado pelo o que eu
+            faço.</p>
 
-          <div class="column left">
-            <img src="assets/foto.jpg" alt="Foto de Renan">
-          </div>
+          <p>Comecei a conhecer o mundo da programação por volta dos meus 14 anos, porém usando Java no ano de 2018.
+            Como estava próximo de entrar no ensino médio, queria cursar uma escola técnica. Assim, no ano seguinte,
+            me
+            matriculei na escola técnica Maria José Medeiros para fazer o curso de Redes de Computadores. Foram 3 anos
+            incríveis, pois
+            aumentei meu conhecimento na área. Mesmo focando fortemente em Programação e, posteriormente, em
+            Desenvolvimento Web, pude ter
+            contato com outras tecnologias como HTML5 e CSS3, e linguagens como JavaScript, Java e React JS.</p>
 
-          <div class="column right">
-            <h3 class="title-secondary text">Desenvolvedor Front-end</h3>
-            <p>Olá, me chamo Renan, muito prazer! Sou um estudante em desenvolvimento Front-end apaixonado pelo o que eu
-              faço.</p>
-
-            <p>Comecei a conhecer o mundo da programação por volta dos meus 14 anos, porém usando Java no ano de 2018.
-              Como estava próximo de entrar no ensino médio, queria cursar uma escola técnica. Assim, no ano seguinte,
-              me
-              matriculei na escola técnica Maria José Medeiros para fazer o curso de Redes de Computadores. Foram 3 anos
-              incríveis, pois
-              aumentei meu conhecimento na área. Mesmo focando fortemente em Programação e, posteriormente, em
-              Desenvolvimento Web, pude ter
-              contato com outras tecnologias como HTML5 e CSS3, e linguagens como JavaScript, Java e React JS.</p>
-
-            <p>Quando veio o ano de 2022, decidi iniciar minha faculdade de Análise e Desenvolvimento de Sistemas, para
-              desenvolver ainda mais o meu conhecimento na área. Nesse meio, tenho estudado também por outros meios.</p>
-          </div>
+          <p>Quando veio o ano de 2022, decidi iniciar minha faculdade de Análise e Desenvolvimento de Sistemas, para
+            desenvolver ainda mais o meu conhecimento na área. Nesse período, tenho estudado também por outros meios e
+            venho colocando o meu aprendizado em prática.</p>
         </div>
       </div>
     </section>
+
+    <section class="section skills" id="skills">
+      <div class="title">
+        <h2>HABILIDADES</h2>
+      </div>
+
+      <div class="container skills-content">
+        <div class="cards">
+
+          <div class="box">
+            <p>HTML5</p>
+            <img src="assets/html.svg" alt="html">
+          </div>
+
+          <div class="box">
+            <p>CSS3</p>
+            <img src="assets/html.svg" alt="css3">
+          </div>
+
+          <div class="box">
+            <p>Javascript</p>
+            <img src="assets/html.svg" alt="javascript">
+          </div>
+
+          <div class="box">
+            <p>Figma</p>
+            <img src="assets/html.svg" alt="figma">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
 
   </main>
 
@@ -96,6 +129,10 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Scroll Reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- Main JS -->
   <script src="main.js"></script>
 </body>
 

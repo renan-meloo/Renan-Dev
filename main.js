@@ -8,7 +8,11 @@ $(document).ready(function () {
   })
 
   // ABRIR E FECHAR MENU
-  $('.menu-btn').click(function () {
-    $('.navbar .menu').toggleClass('active')
+  $('.toggle').click(function () {
+    $('.navbar .menu').toggleClass('show')
+  })
+
+  $('.menu').click(function () {
+    $('.navbar .menu').removeClass('show')
   })
 })
