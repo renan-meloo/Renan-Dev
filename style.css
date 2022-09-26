@@ -19,9 +19,11 @@ img {
   --background-blue: #2569f1;
   --title-color: #45505b;
   --title-secondary: #728394;
-  --line-title: #272829;
+  --line-title: #131325;
   --line-title2: #ddd;
   --text-home: #ffffff;
+  --box-skills: #13131f;
+  --background-scrollbar: #13131f;
 
   /* fonts */
   --title-font-size: 1.875rem;
@@ -64,7 +66,7 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #13131F;
+  background: var(--background-scrollbar);
 }
 
 /* Handle */
@@ -100,7 +102,7 @@ p {
   bottom: 0;
   left: 50%;
   width: 80px;
-  height: 3px;
+  height: .2rem;
   background: var(--line-title);
   transform: translateX(-50%)
 }
@@ -111,7 +113,7 @@ p {
   bottom: 0;
   left: 50%;
   width: 180px;
-  height: 3px;
+  height: .2rem;
   background: var(--line-title2);
   transform: translateX(-50%)
 }
@@ -158,6 +160,7 @@ p {
 .navbar .menu li {
   list-style: none;
   display: inline-block;
+  transition: 0.2s;
 }
 
 .navbar .menu li a {
@@ -166,6 +169,10 @@ p {
   font-weight: 500;
   margin-left: 25px;
   transition: 0.3s;
+}
+
+.navbar .menu li:hover {
+  transform: scale(1.1);
 }
 
 .navbar .menu li a:hover {
@@ -241,6 +248,52 @@ p {
   align-items: center;
   justify-content: space-between;
   padding: 0 8rem;
+}
+
+/*======== SESSÃO HABILIDADES ========*/
+section#skills .container {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+section#skills .container .cards {
+  display: flex;
+  align-items: center;
+  gap: 8.5rem;
+}
+
+section#skills .container .cards .box {
+    color: var(--background-blue);
+    position: relative;
+    text-align: center;
+    background-color: var(--box-skills);
+    padding: 1.52rem 4rem 3.6rem 4rem;
+    border-top-left-radius: 2.1rem;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.box:hover {
+  transform: scale(1.1);
+}
+
+section#skills .container .cards .box::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 0.3rem;
+  background-image: linear-gradient(90deg, #204694 0%, #004fee 92.32%);
+  bottom: -0.1rem;
+  left: 0;
+  }
+
+.title-box {
+  font: 600 1.4rem 'DM Sans', sans-serif;
+  text-align: center;
+  color: var(--background-blue);
+  margin-bottom: 1rem;
+  -webkit-font-smoothing: auto;
 }
 
 /*======== RESPONSIVO ========*/
@@ -322,7 +375,7 @@ p {
     font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
-    padding-top: 18rem;
+    padding-top: 16rem;
     align-items: center;
     animation: fade 1s;
 
