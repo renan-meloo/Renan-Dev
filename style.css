@@ -16,9 +16,9 @@ img {
   --header-height: 4.5rem;
   --text-site: #272829;
   --background-color: #F9F9F9;
-  --background-blue: #2569f1;
+  --background-blue: rgb(37, 105, 241);
   --title-color: #45505b;
-  --title-secondary: #728394;
+  --title-secondary: #6b757e;
   --line-title: #131325;
   --line-title2: #ddd;
   --text-home: #ffffff;
@@ -40,7 +40,7 @@ html {
   
 } */
 .section {
-  padding: 3.75rem 0;
+  padding: 2.75rem 0;
   margin-left: auto;
   margin-right: auto;
   width: 95%;
@@ -75,7 +75,7 @@ body {
 }
 
 p {
-  font-size: 1.35rem;
+  font-size: 1.31rem;
   font-weight: 400;
   display: block;
   margin-block-start: 1em;
@@ -87,10 +87,10 @@ p {
 }
 
 .title {
-  font: 700 var(--title-font-size) 'DM Sans', sans-serif;
+  font: 700 1.6rem 'DM Sans', sans-serif;
   color: var(--title-color);
   -webkit-font-smoothing: auto;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   padding-bottom: 1.25rem;
   text-align: center;
   text-transform: uppercase;
@@ -101,8 +101,8 @@ p {
   position: absolute;
   bottom: 0;
   left: 50%;
-  width: 80px;
-  height: .2rem;
+  width: 3.2rem;
+  height: 0.21rem;
   background: var(--line-title);
   transform: translateX(-50%)
 }
@@ -112,7 +112,7 @@ p {
   position: absolute;
   bottom: 0;
   left: 50%;
-  width: 180px;
+  width: 10rem;
   height: .2rem;
   background: var(--line-title2);
   transform: translateX(-50%)
@@ -122,6 +122,7 @@ p {
   font: 600 1.8rem 'DM Sans', sans-serif;
   color: var(--title-secondary);
   -webkit-font-smoothing: auto;
+  margin-bottom: .8rem;
 }
 
 /*======== MENU INÍCIO ========*/
@@ -222,22 +223,17 @@ p {
 
 /*======== SESSÃO SOBRE MIM ========*/
 .about .about-content .right {
-  width: 58%;
-}
-
-.about .about-content .right .text {
-  margin-bottom: 10px;
+  width: 52%;
 }
 
 .about .about-content .left {
   display: flex;
-  width: 42%;
   justify-content: center;
 }
 
 .about .about-content .left img {
-  width: 25rem;
-  height: 25rem;
+  width: 30rem;
+  height: 30rem;
   object-fit: cover;
   border-radius: 4px;
 }
@@ -245,21 +241,25 @@ p {
 .about .about-content {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 8rem;
+  justify-content: space-evenly;
 }
 
 /*======== SESSÃO HABILIDADES ========*/
 section#skills .container {
-  width: 80%;
-  margin: 2rem auto;
+  width: 100%;
 }
 
 section#skills .container .cards {
   display: flex;
   align-items: center;
-  gap: 8.5rem;
+  padding: 0 20px;
+  justify-content: center;
+  gap: 4rem;
+}
+
+section#skills .container .cards .box img {
+  width: 8rem;
+  object-fit: cover;
 }
 
 section#skills .container .cards .box {
@@ -267,10 +267,11 @@ section#skills .container .cards .box {
     position: relative;
     text-align: center;
     background-color: var(--box-skills);
-    padding: 1.52rem 4rem 3.6rem 4rem;
+    padding: 1.7rem 3.7rem 2.4rem 3.7rem;
     border-top-left-radius: 2.1rem;
     cursor: pointer;
     transition: .2s;
+
 }
 
 .box:hover {
@@ -297,23 +298,24 @@ section#skills .container .cards .box::after {
 }
 
 /*======== RESPONSIVO ========*/
-@media (max-width: 1350px){
-  .about .about-content .left img {
+@media (max-width: 1300px){
+  .about .about-content .left {
     width: 24rem;
     height: 24rem;
+    margin-bottom: 10rem;
   }
-   .about .about-content .column {
+  .about .about-content .column {
     width: 60%;
   }
-    .about .about-content .left {
+  .about .about-content .left {
     display: flex;
     width: 42%;
     justify-content: center;
-    margin: 0 auto 3.75rem;
   }
 
   .about .about-content .right {
-    flex: 100%;
+    flex: 60%;
+    margin: 0 5rem;
   }
 
   .section-home .max-width {
@@ -328,11 +330,6 @@ section#skills .container .cards .box::after {
     width: 2.3rem;
     height: 2.3rem;
     margin-left: 0;
-  }
-
-  .about .about-content .left img {
-    width: 21.5rem;
-    height: 21.5rem;
   }
 
   .about .about-content .right {
@@ -417,6 +414,13 @@ section#skills .container .cards .box::after {
 
   .about .about-content .right {
     flex: 100%;
+    margin: 0 4rem;
+  }
+
+  .about .about-content .left {
+    width: 20rem;
+    height: 20rem;
+    margin-bottom: 12rem;
   }
 }
 
