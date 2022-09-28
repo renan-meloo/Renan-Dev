@@ -15,4 +15,18 @@ $(document).ready(function () {
   $('.menu').click(function () {
     $('.navbar .menu').removeClass('show')
   })
+
+  $(window).scroll(function () {
+    if (this.scrollY > 800) {
+      $('.back-to-top').addClass('show')
+    } else {
+      $('.back-to-top').removeClass('show')
+    }
+  })
+})
+
+// When Scroll
+window.addEventListener('scroll', function () {
+  changeHeaderWhenScroll()
+  backToTop()
 })
