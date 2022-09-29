@@ -14,15 +14,22 @@ img {
 /*======== VARIABLES ========*/
 :root {
   --text-site: #272829;
+  --text-home: #ffffff;
+  
   --background-color: #F9F9F9;
+  --background-secondary: #f3f3f3;
+  --background-scrollbar: #13131f;
   --background-blue: #2569f1;
+
   --title-color: #45505b;
-  --title-secondary: #6b757e;
+  --title-secondary: #6e767c;
+
   --line-title: #131325;
   --line-title2: #ddd;
-  --text-home: #ffffff;
+
   --box-skills: #13131f;
-  --background-scrollbar: #13131f;
+  --box-portfolio: #13131fea;
+  
 
   /* fonts */
   --title-font-size: 1.875rem;
@@ -39,7 +46,7 @@ html {
   
 } */
 .section {
-  padding: 2.75rem 0;
+  padding: 5rem 0;
   margin-left: auto;
   margin-right: auto;
   width: 90%;
@@ -89,7 +96,7 @@ p {
   font: 700 1.5rem 'DM Sans', sans-serif;
   color: var(--title-color);
   -webkit-font-smoothing: auto;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   padding-bottom: 1.25rem;
   text-align: center;
   text-transform: uppercase;
@@ -100,8 +107,8 @@ p {
   position: absolute;
   bottom: 0;
   left: 50%;
-  width: 2.8rem;
-  height: 0.21rem;
+  width: 2.4rem;
+  height: 0.18rem;
   background: var(--line-title);
   transform: translateX(-50%)
 }
@@ -111,14 +118,14 @@ p {
   position: absolute;
   bottom: 0;
   left: 50%;
-  width: 8rem;
-  height: .2rem;
+  width: 7rem;
+  height: .18rem;
   background: var(--line-title2);
   transform: translateX(-50%)
 }
 
 .title-secondary {
-  font: 600 1.4rem 'DM Sans', sans-serif;
+  font: 600 1.5rem 'DM Sans', sans-serif;
   color: var(--title-secondary);
   -webkit-font-smoothing: auto;
   margin-bottom: .8rem;
@@ -191,6 +198,22 @@ p {
   display: none;
 }
 
+.toggle .close-outline {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.toggle.show .menu-outline {
+  opacity: 0;
+  visibility: hidden;
+  font-size: 0;
+}
+
+.navbar .menu.show, .toggle.show .close-outline {
+  opacity: 1;
+  visibility: visible;
+}
+
 /*======== SESSÃO HOME ========*/
 .section-home {
     display: flex;
@@ -208,16 +231,15 @@ p {
 .section-home .home-content .text-1 {
   font-size: 4.2rem;
   font-weight: 500;
-  margin-left: -0.18rem;
 }
 
-.section-home .home-content .text-2 {
+.section-home .home-content .text-2, .text-3{
   font-size: 2.3rem;
-  margin: 5px 0;
+  font-weight: 500;
 }
+
 .section-home .home-content .text-2 span {
   color: var(--background-blue);
-  font-weight: 500;
 }
 
 /*======== SESSÃO SOBRE MIM ========*/
@@ -244,6 +266,10 @@ p {
 }
 
 /*======== SESSÃO HABILIDADES ========*/
+section#skills {
+  background-color: var(--background-secondary);
+  width: 100%;
+}
 section#skills .container {
   width: 100%;
 }
@@ -292,6 +318,72 @@ section#skills .container .cards .box::after {
   color: var(--background-blue);
   margin-bottom: 1rem;
   -webkit-font-smoothing: auto;
+}
+
+/*======== SESSÃO PORTFÓLIO ========*/
+section#portfolio .container p {
+  text-align: center;
+}
+
+section#portfolio .container .cards-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+section#portfolio .container .cards-portfolio p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #F9F9F9;
+    margin-bottom: 1rem;
+}
+
+section#portfolio .container .cards-portfolio .box {
+  transition: .3s;
+  min-width: 30%;
+}
+
+section#portfolio .container .cards-portfolio .box img {
+  width: 25rem;
+  height: 15rem;
+}
+
+section#portfolio .container .cards-portfolio .box .cover {
+  position: relative;
+  cursor: pointer;
+}
+
+section#portfolio .container .cards-portfolio .box .cover::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--box-portfolio);
+}
+
+section#portfolio .container .cards-portfolio .box .cover::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0.3rem;
+    bottom: 0.1rem;
+    background-image: linear-gradient(90deg, #2250ad 0%, #004fee 92.32%);
+}
+
+section#portfolio .container .cards-portfolio .box .cover .details {
+  position: absolute;
+  width: 100%;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*======== FOOTER ========*/
@@ -369,7 +461,7 @@ section#skills .container .cards .box::after {
     font-size: 4rem;
   }
   
-  .section-home .home-content .text-2 {
+  .section-home .home-content .text-2, .text-3 {
     font-size: 2.2rem;
   }
   
@@ -430,11 +522,6 @@ section#skills .container .cards .box::after {
     animation: fade 1s;
 }
 
-  .navbar .menu.show {
-      opacity: 1;
-      visibility: visible;
-  }
-
   .navbar .menu li {
     display: block;
     padding-bottom: 2rem;
@@ -454,12 +541,12 @@ section#skills .container .cards .box::after {
     font-size: 3.75rem;
   }
   
-  .section-home .home-content .text-2 {
+  .section-home .home-content .text-2, .text-3 {
     font-size: 2rem;
   }
 
   .title-secondary {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 
   .about .about-content .right {
@@ -489,7 +576,7 @@ section#skills .container .cards .box::after {
     font-size: 3.375rem;
   }
   
-  .section-home .home-content .text-2 {
+  .section-home .home-content .text-2, .text-3 {
     font-size: 1.8rem;
     margin: 5px 0;
   }
@@ -514,7 +601,7 @@ section#skills .container .cards .box::after {
     font-size: 3.125rem;
   }
 
-  .section-home .home-content .text-2 {
+  .section-home .home-content .text-2, .text-3 {
     font-size: 1.68rem;
   }
 }

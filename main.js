@@ -9,13 +9,14 @@ $(document).ready(function () {
 
   // ABRIR E FECHAR MENU
   $('.toggle').click(function () {
-    $('.navbar .menu').toggleClass('show')
+    $('.navbar .menu').toggleClass('show'), $('.toggle').toggleClass('show')
   })
 
   $('.menu').click(function () {
-    $('.navbar .menu').removeClass('show')
+    $('.navbar .menu').removeClass('show'), $('.toggle').removeClass('show')
   })
 
+  // Botão de ir para o Topo
   $(window).scroll(function () {
     if (this.scrollY > 800) {
       $('.back-to-top').addClass('show')
@@ -23,10 +24,4 @@ $(document).ready(function () {
       $('.back-to-top').removeClass('show')
     }
   })
-})
-
-// When Scroll
-window.addEventListener('scroll', function () {
-  changeHeaderWhenScroll()
-  backToTop()
 })
