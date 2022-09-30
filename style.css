@@ -17,7 +17,7 @@ img {
   --text-home: #ffffff;
   
   --background-color: #F9F9F9;
-  --background-secondary: #f3f3f3;
+  --background-secondary: #f5f5f5;
   --background-scrollbar: #13131f;
   --background-blue: #2569f1;
 
@@ -41,10 +41,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
-/* .container {
-  
-} */
 .section {
   padding: 5rem 0;
   margin-left: auto;
@@ -270,11 +266,11 @@ section#skills {
   background-color: var(--background-secondary);
   width: 100%;
 }
-section#skills .container {
+section#skills .skills-content {
   width: 100%;
 }
 
-section#skills .container .cards {
+section#skills .skills-content .cards {
   display: flex;
   align-items: center;
   padding: 0 20px;
@@ -282,12 +278,12 @@ section#skills .container .cards {
   gap: 5rem;
 }
 
-section#skills .container .cards .box img {
+section#skills .skills-content .cards .box img {
   width: 6rem;
   object-fit: cover;
 }
 
-section#skills .container .cards .box {
+section#skills .skills-content .cards .box {
     color: var(--background-blue);
     position: relative;
     text-align: center;
@@ -302,7 +298,7 @@ section#skills .container .cards .box {
   transform: scale(1.1);
 }
 
-section#skills .container .cards .box::after {
+section#skills .skills-content .cards .box::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -321,11 +317,11 @@ section#skills .container .cards .box::after {
 }
 
 /*======== SESSÃO PORTFÓLIO ========*/
-section#portfolio .container p {
+section#portfolio .portfolio-content p {
   text-align: center;
 }
 
-section#portfolio .container .cards-portfolio {
+section#portfolio .portfolio-content .cards-portfolio {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -334,29 +330,28 @@ section#portfolio .container .cards-portfolio {
   padding: 2rem 1rem 1rem 1rem;
 }
 
-section#portfolio .container .cards-portfolio p {
+section#portfolio .portfolio-content .cards-portfolio p {
     font-size: 1.8rem;
     font-weight: 500;
     color: #F9F9F9;
     margin-bottom: 1rem;
 }
 
-section#portfolio .container .cards-portfolio .box {
+section#portfolio .portfolio-content .cards-portfolio .box {
   transition: .3s;
-  min-width: 30%;
 }
 
-section#portfolio .container .cards-portfolio .box img {
+section#portfolio .portfolio-content .cards-portfolio .box img {
   width: 25rem;
   height: 15rem;
 }
 
-section#portfolio .container .cards-portfolio .box .cover {
+section#portfolio .portfolio-content .cards-portfolio .box .cover {
   position: relative;
   cursor: pointer;
 }
 
-section#portfolio .container .cards-portfolio .box .cover::before {
+section#portfolio .portfolio-content .cards-portfolio .box .cover::before {
     content: '';
     display: block;
     position: absolute;
@@ -365,7 +360,7 @@ section#portfolio .container .cards-portfolio .box .cover::before {
     background-color: var(--box-portfolio);
 }
 
-section#portfolio .container .cards-portfolio .box .cover::after {
+section#portfolio .portfolio-content .cards-portfolio .box .cover::after {
     content: '';
     display: block;
     position: absolute;
@@ -375,7 +370,7 @@ section#portfolio .container .cards-portfolio .box .cover::after {
     background-image: linear-gradient(90deg, #2250ad 0%, #004fee 92.32%);
 }
 
-section#portfolio .container .cards-portfolio .box .cover .details {
+section#portfolio .portfolio-content .cards-portfolio .box .cover .details {
   position: absolute;
   width: 100%;
   top: 55%;
@@ -387,6 +382,64 @@ section#portfolio .container .cards-portfolio .box .cover .details {
 }
 
 /*======== FOOTER ========*/
+#footer{
+  background: var(--background-secondary);
+  color: #45505b;
+  font-size: 14px;
+  text-align: center;
+  padding: 1.8rem 0;
+  width: 100%;
+  }
+
+  #footer .title-footer {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+
+    position: relative;
+    padding: 0 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  #footer .text-footer {
+    font-size: .9rem;
+    font-style: italic;
+    padding: 0 1.2rem;
+    margin: 0;
+  }
+
+  #footer .social-links {
+    display: flex;
+    padding: 2.2rem 0;
+    gap: 6px;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    flex-wrap: wrap;
+  }
+
+  #footer .social-links .box-social {
+  position: relative;
+  cursor: pointer;
+
+  background: var(--background-scrollbar);
+  color: var(--background-blue); 
+
+  padding: 0.5rem;
+  clip-path: circle();
+
+  font-size: 1.5rem;
+  line-height: 0.75;
+  
+  transition: .2s;
+  }
+
+  #footer .social-links .box-social:hover {
+    transform: scale(1.1);
+  }
+
 .back-to-top {
   background: var(--background-scrollbar);
   color: var(--background-blue);
@@ -408,11 +461,6 @@ section#portfolio .container .cards-portfolio .box .cover .details {
   transform: translateY(100%);
 }
 
-.back-to-top:hover {
-  transform: scale(5.1)
-
-}
-
 .back-to-top.show {
   visibility: visible;
   opacity: 1;
@@ -422,16 +470,15 @@ section#portfolio .container .cards-portfolio .box .cover .details {
 
 /*======== RESPONSIVO ========*/
 @media (max-width: 1300px){
-  .about .about-content .left {
-    margin-bottom: 2rem;
-  }
   .about .about-content .column {
     width: 60%;
   }
+
   .about .about-content .left {
     display: flex;
     width: 42%;
     justify-content: center;
+    margin-bottom: 2rem;
   }
 
   .about .about-content .right {
@@ -445,7 +492,7 @@ section#portfolio .container .cards-portfolio .box .cover .details {
     align-items: center;
   }
 
-  section#skills .container .cards {
+  section#skills .skills-content .cards {
     flex-wrap: wrap
   }
 }
@@ -545,7 +592,7 @@ section#portfolio .container .cards-portfolio .box .cover .details {
     font-size: 2rem;
   }
 
-  .title-secondary {
+  .title, .title-secondary {
     font-size: 1.4rem;
   }
 
@@ -560,7 +607,7 @@ section#portfolio .container .cards-portfolio .box .cover .details {
     margin-bottom: 6rem;
   }
 
-  section#skills .container .cards .box {
+  section#skills .skills-content .cards .box {
     padding: 1rem 3rem 1.7rem 3rem;
     border-top-left-radius: 1.8rem;
   }
@@ -586,22 +633,30 @@ section#portfolio .container .cards-portfolio .box .cover .details {
     height: 20rem;
   }
 
-  .container {
-    margin: 0;
-  }
-
-  section#skills .container .cards .box {
+  section#skills .skills-content .cards .box {
     padding: .7rem 2.7rem 1.4rem 2.7rem;
     border-top-left-radius: 1.6rem;
   }
+
+  section#portfolio .portfolio-content .cards-portfolio .box img {
+    width: 20rem;
+    height: 12rem;
+  }
+
+  
 }
 
 @media (max-width: 500px) {
   .section-home .home-content .text-1 {
-    font-size: 3.125rem;
+    font-size: 3rem;
   }
 
   .section-home .home-content .text-2, .text-3 {
-    font-size: 1.68rem;
+    font-size: 1.5rem;
+  }
+
+  section#portfolio .portfolio-content .cards-portfolio .box img {
+    width: 17rem;
+    height: 10rem;
   }
 }
