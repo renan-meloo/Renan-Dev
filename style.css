@@ -214,7 +214,7 @@ p {
 .section-home {
     display: flex;
     height: 100vh;
-    background: url(assets/banner-fundo.jpg) center no-repeat;
+    background: url(assets/banner-fundo.svg) center no-repeat;
     background-size: cover; /* Regula a imagem sem achatar */
     color: var(--text-home);
     min-height: 500px;
@@ -629,8 +629,9 @@ section#portfolio .portfolio-content .cards-portfolio .box .cover .details {
   }
 
   .about .about-content .left {
-    width: 20rem;
-    height: 20rem;
+    width: 15rem;
+    height: 15rem;
+    margin-bottom: 10rem;
   }
 
   section#skills .skills-content .cards .box {
@@ -642,8 +643,6 @@ section#portfolio .portfolio-content .cards-portfolio .box .cover .details {
     width: 20rem;
     height: 12rem;
   }
-
-  
 }
 
 @media (max-width: 500px) {
