@@ -63,7 +63,7 @@ body {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 0.85rem;
+  width: .8rem;
 }
 
 /* Track */
@@ -598,7 +598,7 @@ section#portfolio .portfolio-content .cards-portfolio .box .cover .details {
 
   .about .about-content .right {
     flex: 100%;
-    margin: 0 4rem;
+    margin: 0 2rem;
   }
 
   .about .about-content .left {
@@ -628,12 +628,6 @@ section#portfolio .portfolio-content .cards-portfolio .box .cover .details {
     margin: 5px 0;
   }
 
-  .about .about-content .left {
-    width: 15rem;
-    height: 15rem;
-    margin-bottom: 10rem;
-  }
-
   section#skills .skills-content .cards .box {
     padding: .7rem 2.7rem 1.4rem 2.7rem;
     border-top-left-radius: 1.6rem;
@@ -654,8 +648,23 @@ section#portfolio .portfolio-content .cards-portfolio .box .cover .details {
     font-size: 1.5rem;
   }
 
+  .about .about-content .left {
+  margin-bottom: 1rem;
+  }
+
+  .about .about-content .left img {
+    width: 95%;
+    height: 18rem;
+  }
+
+  section#portfolio .portfolio-content .cards-portfolio .box {
+    width: 95%;
+  }
   section#portfolio .portfolio-content .cards-portfolio .box img {
-    width: 17rem;
+    width: 95%;
     height: 10rem;
+  }
+  section#portfolio .portfolio-content .cards-portfolio .box .cover .details {
+    font-size: 1.7rem;
   }
 }
