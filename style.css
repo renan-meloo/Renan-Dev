@@ -330,13 +330,6 @@ section#portfolio .portfolio-content .cards-portfolio {
   padding: 2rem 1rem 1rem 1rem;
 }
 
-section#portfolio .portfolio-content .cards-portfolio p {
-    font-size: 1.8rem;
-    font-weight: 500;
-    color: #F9F9F9;
-    margin-bottom: 1rem;
-}
-
 section#portfolio .portfolio-content .cards-portfolio .box {
   transition: .3s;
 }
@@ -370,7 +363,15 @@ section#portfolio .portfolio-content .cards-portfolio .box .cover::after {
     background-image: linear-gradient(90deg, #2250ad 0%, #004fee 92.32%);
 }
 
-section#portfolio .portfolio-content .cards-portfolio .box .cover .details {
+section#portfolio .details {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #F9F9F9;
+  margin-bottom: 1rem;
+}
+
+section#portfolio .details, 
+section#portfolio .details-site {
   position: absolute;
   width: 100%;
   top: 55%;
@@ -379,6 +380,25 @@ section#portfolio .portfolio-content .cards-portfolio .box .cover .details {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
+}
+
+section#portfolio .details-site {
+  opacity: 0;
+  font-size: 1rem;
+  padding: 1.6rem 1.2rem 0;
+  text-align: left;
+  color: var(--text-home)
+}
+
+section#portfolio .cover:hover .details-site {
+  opacity: 1;
+  transition: .5s;
+}
+
+section#portfolio .cover:hover .details {
+  top: 20%;
+  transition: .3s;
 }
 
 /*======== FOOTER ========*/
@@ -565,8 +585,7 @@ section#portfolio .portfolio-content .cards-portfolio .box .cover .details {
     opacity: 0;
     visibility: hidden;
 
-    animation: appearField 1s;
-    animation: fade 1s;
+    transition: .5s;
 }
 
   .navbar .menu li {
@@ -634,8 +653,16 @@ section#portfolio .portfolio-content .cards-portfolio .box .cover .details {
   }
 
   section#portfolio .portfolio-content .cards-portfolio .box img {
-    width: 20rem;
-    height: 12rem;
+    width: 21rem;
+    height: 13rem;
+  }
+
+  section#portfolio .details {
+    font-size: 1.4rem;
+  }
+
+  section#portfolio .details-site {
+    font-size: .9rem;
   }
 }
 
@@ -664,7 +691,13 @@ section#portfolio .portfolio-content .cards-portfolio .box .cover .details {
     width: 95%;
     height: 10rem;
   }
-  section#portfolio .portfolio-content .cards-portfolio .box .cover .details {
-    font-size: 1.7rem;
+
+  section#portfolio .details {
+    font-size: 1.1rem;
+  }
+
+  section#portfolio .details-site {
+    font-size: .72rem;
+    padding: .6rem .4rem 0;
   }
 }
