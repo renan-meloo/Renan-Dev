@@ -16,6 +16,14 @@ $(document).ready(function () {
     $('.navbar .menu').removeClass('show'), $('.toggle').removeClass('show')
   })
 
+  // TypedJS - Digitação - Home
+  var typed = new Typed('.typing', {
+    strings: ['', 'Desenvolvedor', 'Designer', 'Programador'],
+    typeSpeed: 80,
+    backSpeed: 50,
+    loop: true
+  })
+
   // Botão de ir para o Topo
   $(window).scroll(function () {
     if (this.scrollY > 800) {
