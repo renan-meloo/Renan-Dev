@@ -1,10 +1,18 @@
+ <h1 align="center"> Meu Portfólio </h1>
+
+<p align="center">
+  <a href="#-sobre-o-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-licença">Licença</a>
+</p>
+ 
  ![Portfolio-image](https://user-images.githubusercontent.com/82462602/194340251-fccb06de-3ba8-4708-b1b9-d4d518dd112d.jpg)
 
 Você pode acessá-lo com este [link.](https://renan-meloo.github.io/portfolio/)
 
 ---
 
-## **💻 Sobre**
+## 💻 Sobre o Projeto
 
 Meu portfólio pessoal, onde exibo informações sobre mim e todos os meus projetos desenvolvidos.
 
@@ -18,15 +26,18 @@ Você pode acessá-lo com este [link.](https://renan-meloo.github.io/portfolio/)
 
 ---
 
-## **🚀 Tecnologias**
+## 🚀 Tecnologias
 
-Esse projeto foi desenvolvido com as seguintes ferramentas:
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- HTML5
-- Vanilla JavaScript
-- CSS3
+- HTML5 e CSS3
+- JavaScript jQuery
 - Figma
+- [ScrollReveal](https://scrollrevealjs.org/)
 
+## :memo: Licença
+
+Esse projeto está sob a licença MIT.
 
 ---
 
