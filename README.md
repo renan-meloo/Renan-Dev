@@ -6,7 +6,7 @@
   <a href="#memo-licença">Licença</a>
 </p>
  
- ![Portfolio-image](https://user-images.githubusercontent.com/82462602/194340251-fccb06de-3ba8-4708-b1b9-d4d518dd112d.jpg)
+ ![Portfolio-image](https://user-images.githubusercontent.com/82462602/198676903-3ebf896f-71d8-456c-9e3f-2a5d72ab22e3.png)
 
 Você pode acessá-lo com este [link.](https://renan-meloo.github.io/portfolio/)
 
