@@ -41,7 +41,7 @@ $(document).ready(function () {
   })
 
   scrollReveal.reveal(
-    `.logo, #home .text-3, #home .text-1, #home .text-2,
+    `.logo, #home .text-3, #home .text-1, #home .text-2, #home .button-cv,
     #about .title, #about .column,
     section#skills, #skills .title, #skills .cards,
     section#portfolio, #portfolio .title, #portfolio .portfolio-content, #portfolio .cards-portfolio,

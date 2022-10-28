@@ -19,7 +19,7 @@ img {
   --background-color: #F9F9F9;
   --background-secondary: #f5f5f5;
   --background-scrollbar: #13131f;
-  --background-blue: #2569f1;
+  --background-blue: #276fff;
 
   --title-color: #45505b;
   --title-secondary: #6e767c;
@@ -236,6 +236,23 @@ p {
 
 .section-home .home-content .text-2 span {
   color: var(--background-blue);
+}
+
+.section-home .button-cv {
+  padding: 1.2rem 0rem;
+}
+
+.section-home .button-cv a{
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-home);
+  padding: .7rem 1.7rem;
+  background-image: linear-gradient(100deg, var(--background-blue) .2%, #0400ff 100%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  transition: .3s;
 }
 
 /*======== SESSÃO SOBRE MIM ========*/
@@ -668,7 +685,7 @@ section#portfolio .cover:hover .details {
 
 @media (max-width: 500px) {
   .section-home .home-content .text-1 {
-    font-size: 3rem;
+    font-size: 2.6rem;
   }
 
   .section-home .home-content .text-2, .text-3 {
