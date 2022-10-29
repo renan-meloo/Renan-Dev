@@ -34,6 +34,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - JavaScript jQuery
 - Figma
 - [ScrollReveal](https://scrollrevealjs.org/)
+- [TypedJS](https://cdnjs.com/libraries/typed.js/2.0.0)
 
 ## :memo: Licença
 
