@@ -86,7 +86,7 @@
 .section-home {
   display: flex;
   height: 100vh;
-  background: url(assets/banner-fundo.svg) center no-repeat;
+  background: url(/assets/banner-fundo.svg) center no-repeat;
   background-size: cover;
   /* Regula a imagem sem achatar */
   color: var(--text-home);
