@@ -1,0 +1,129 @@
+/*======== RESET ========*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/*======== VARIABLES ========*/
+:root {
+  --text-site: #272829;
+  --text-home: #ffffff;
+
+  --background-color: #F9F9F9;
+  --background-secondary: #f5f5f5;
+  --background-scrollbar: #13131f;
+  --background-blue: #276fff;
+
+  --title-color: #45505b;
+  --title-secondary: #6e767c;
+
+  --line-title: #131325;
+  --line-title2: #ddd;
+
+  --box-skills: #13131f;
+  --box-portfolio: #13131fea;
+
+
+  /* fonts */
+  --title-font-size: 1.875rem;
+}
+
+/*======== BASE SITE ========*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+.section {
+  padding: 5rem 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.max-width {
+  padding: 0 80px;
+  margin: auto;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-site);
+  background: var(--background-color);
+  text-align: left;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: .8rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--background-scrollbar);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--background-blue);
+}
+
+p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font: 700 1.5rem 'DM Sans', sans-serif;
+  color: var(--title-color);
+  -webkit-font-smoothing: auto;
+  margin-bottom: 3rem;
+  padding-bottom: 1.25rem;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 2.4rem;
+  height: 0.18rem;
+  background: var(--line-title);
+  transform: translateX(-50%)
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 7rem;
+  height: .18rem;
+  background: var(--line-title2);
+  transform: translateX(-50%)
+}
+
+.title-secondary {
+  font: 600 1.5rem 'DM Sans', sans-serif;
+  color: var(--title-secondary);
+  -webkit-font-smoothing: auto;
+  margin-bottom: .8rem;
+}
