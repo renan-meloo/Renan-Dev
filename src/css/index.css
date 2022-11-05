@@ -95,12 +95,17 @@
     background-color: #000000a6;
     backdrop-filter: blur(10px);
 
-    position: fixed;
-    height: 100vh;
-    width: 100%;
 
-    top: 0%;
-    left: 0%;
+    height: 100vh;
+    width: 100vw;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: grid;
+    place-content: center;
+
     z-index: 997;
 
     visibility: hidden;
@@ -108,9 +113,9 @@
 
     align-items: center;
     align-content: center;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    padding-top: 7rem;
 
     transition: .5s;
   }
