@@ -8,7 +8,8 @@
  
  ![Portfolio-image](https://user-images.githubusercontent.com/82462602/198676903-3ebf896f-71d8-456c-9e3f-2a5d72ab22e3.png)
 
-Você pode acessá-lo com este [link.](https://renan-meloo.github.io/portfolio/)
+Você pode acessá-lo com este [link.](http://portfolio-renan-meloo.vercel.app/)
+
 
 ---
 
@@ -22,9 +23,9 @@ Alguns features existentes são:
 - Responsividade para todos dispositivos;
 - Modal que busca dados de Array de objetos;
 
-Você pode acessá-lo com este [link.](https://renan-meloo.github.io/portfolio/)
+Você pode acessá-lo com este [link.](http://portfolio-renan-meloo.vercel.app/)
 
----
+--
 
 ## 🚀 Tecnologias
 
@@ -33,6 +34,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - HTML5 e CSS3
 - JavaScript jQuery
 - Figma
+- ViteJS
 - [ScrollReveal](https://scrollrevealjs.org/)
 - [TypedJS](https://cdnjs.com/libraries/typed.js/2.0.0)
 
