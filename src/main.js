@@ -1,6 +1,8 @@
 import './css/index.css'
 
+
 $(document).ready(function () {
+  // BARRA AZUL NO MENU AO DESCER
   $(window).scroll(function () {
     if (this.scrollY > 20) {
       $('.navbar').addClass('sticky')
