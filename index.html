@@ -8,6 +8,7 @@
   <title>Renan Melo | Front-End Developer</title>
 
   <link rel="shortcut icon" href="assets/icone-site.svg" type="image/x-icon">
+  <link rel="stylesheet" href="src/css/index.css">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -132,102 +133,6 @@
     </section>
 
     <section class="section portfolio" id="portfolio">
-      <div class="title">
-        <h2>PORTFOLIO</h2>
-      </div>
-
-      <div class="portfolio-content">
-        <p>Aqui está uma galeria com alguns sites que desenvolvi ao longo do tempo, com todo o percurso
-          do meu
-          desenvolvimento, colocando em prática o meu aprendizado.
-        </p>
-
-        <div class="cards-portfolio">
-          <div class="box">
-            <div class="cover">
-
-              <img src="assets/sites/capa-rocketpay.png" alt="Imagem do projeto RocketPay">
-              <div class="name-project">
-                <p>RocketPay</p>
-              </div>
-
-              <div class="description">
-                <p>24 de Outubro de 2021</p>
-                <a>Ver mais</a>
-              </div>
-
-              <span class="details-site">O RocketPay é um componente que simula o formulário de preenchimento de
-                cartão de crédito, onde é possível adicionar máscara aos inputs e atualizar elementos HTML via
-                JavaScript DOM.
-              </span>
-
-            </div>
-          </div>
-
-          <div class="box">
-            <div class="cover">
-
-              <img src="assets/sites/capa-getkcal.png" alt="Imagem do projeto RocketPay">
-              <div class="name-project">
-                <p>Getkcal</p>
-              </div>
-
-              <div class="description">
-                <p>24 de Outubro de 2021</p>
-                <a>Ver mais</a>
-              </div>
-
-              <span class="details-site">O Getkcal é um projeto em que desenvolvi para aprimorar meu JavaScript. A
-                ideia dele é
-                ajudar o usuário a ver seu metabolismo basal, de acordo com suas características.
-              </span>
-
-            </div>
-          </div>
-
-          <div class="box">
-            <div class="cover">
-
-              <img src="assets/sites/capa-beautysalon.png" alt="Imagem do projeto RocketPay">
-              <div class="name-project">
-                <p>BeautySalon</p>
-              </div>
-
-              <div class="description">
-                <p>24 de Outubro de 2021</p>
-                <a>Ver mais</a>
-              </div>
-
-              <span class="details-site">A Beauty Salon é uma landing page mobile-first, na qual pude colocar em
-                prática os conceitos
-                fundamentais de HTML5, CSS3 e JavaScript.
-              </span>
-
-            </div>
-          </div>
-
-          <div class="box">
-            <div class="cover">
-
-              <img src="assets/sites/capa-dev-finances.png" alt="Imagem do projeto RocketPay">
-              <div class="name-project">
-                <p>Dev-Finances</p>
-              </div>
-
-              <div class="description">
-                <p>24 de Outubro de 2021</p>
-                <a>Ver mais</a>
-              </div>
-
-              <span class="details-site">A ideia do site é a implementação de um serviço de controle financeiro
-                pessoal, com entradas e saídas monetárias. No projeto, aprendi a trabalhar com números em Javascript!
-              </span>
-
-            </div>
-          </div>
-
-        </div>
-      </div>
 
     </section>
   </main>
@@ -237,9 +142,11 @@
     <div>
       <h3 class="title-footer">Renan Melo</h3>
 
-      <p class="text-footer">"Não devemos fazer as coisas esperando algo em troca. Faça o que precisa ser feito e a
-        recompensa virá
-        naturalmente no seu tempo"</p>
+      <blockquote>
+        <p class="text-footer">"Não devemos fazer as coisas esperando algo em troca. Faça o que precisa ser feito e a
+          recompensa virá
+          naturalmente no seu tempo"</p>
+      </blockquote>
 
       <div class="social-links">
         <a href="https://wa.me/55085989176707" target="_blank" class="box-social">
@@ -270,6 +177,10 @@
     <ion-icon name="arrow-up-outline"></ion-icon>
   </a>
 
+  <div class="modal hidden" id="modal">
+
+  </div>
+
   <!-- Ícones -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -283,7 +194,8 @@
   <script src="https://unpkg.com/scrollreveal"></script>
 
   <!-- Main JS -->
-  <script type="module" src="src/main.js"></script>
+  <script type="module" src="src/js/main.js"></script>
+
 </body>
 
 </html>
