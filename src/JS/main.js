@@ -18,9 +18,8 @@ $(document).ready(function () {
         • HTML5 & CSS3; <br>
         • Vanilla JavaScript; <br>
         • Node e NPM; <br>
-        • ViteJS; <br>
-        • iMask; <br>`, 
-        imgSrc: 'assets/sites/capa-rocketpay.png',
+        • ViteJS e iMask;`, 
+        imgSrc: 'assets/sites/capa-rocketpay2.png',
         repository: 'https://github.com/renan-meloo/RocketPays',
         site: 'https://rocketpay-lime.vercel.app/'
   
@@ -55,7 +54,7 @@ $(document).ready(function () {
     pessoal, com entradas e saídas monetárias. No projeto, aprendi a trabalhar com números em Javascript!`, 
     imgSrc: 'assets/sites/capa-dev-finances.png',
     repository: 'https://github.com/renan-meloo/dev-finances',
-    site: 'https://https://dev-finances-phi.vercel.app/'
+    site: 'https://dev-finances-phi.vercel.app/'
   
   },
     ]
@@ -111,24 +110,26 @@ $(document).ready(function () {
 
   function createModal(title, date, description, imgSrc, repository, site){
     return `
+    <div class="box-modal">
     <div class="top">
-    <div class="image-site">
-      <img src="${imgSrc}" alt="Capa do projeto ${title}">
-    </div>
-    <div class="info">
-      <div class="title-project">
-        <h2>${title}</h2>
-        <i class="menu-cards">
-          <ion-icon name="close-outline"></ion-icon>
-        </i>
+      <div class="image-site">
+        <img src="${imgSrc}" alt="Capa do projeto ${title}">
       </div>
-      <p>${description}</p>
-      <span>${date}</span>
+      <div class="info">
+        <div class="title-project">
+          <h2>${title}</h2>
+          <i class="menu-cards">
+            <ion-icon name="close-outline"></ion-icon>
+          </i>
+        </div>
+        <p>${description}</p>
+        <span>${date}</span>
+      </div>
     </div>
-  </div>
-  <div class="links">
-    <a href="${site}" target="_blank" class="link-project">Acessar projeto</a>
-    <a href="${repository}" target="_blank" class="link-repository">Acessar repositório</a>
+    <div class="links">
+      <a href="${site}" target="_blank" class="link-project">Acessar projeto</a>
+      <a href="${repository}" target="_blank" class="link-repository">Acessar repositório</a>
+    </div>
   </div>
     `}
 
@@ -153,7 +154,7 @@ $(document).ready(function () {
       modalCreate.innerHTML = modalLayout;
       
       $('.menu-cards').click(function () {
-        $('body').removeClass('transparent'), $('.modal').toggleClass('hidden')
+        $('.modal').toggleClass('hidden')
       })
     }
 
@@ -169,7 +170,7 @@ $(document).ready(function () {
 
   // MENU MODAL
   $('.cover').click(function () {
-    $('body').addClass('transparent'), $('.modal').removeClass('hidden') })
+    $('.modal').removeClass('hidden') })
 
   // Botão de ir para o Topo
   $(window).scroll(function () {
@@ -194,13 +195,13 @@ $(document).ready(function () {
     duration: 1000
   })
 
-  scrollReveal.reveal(
-    `.logo, #home .text-3, #home .text-1, #home .text-2, #home .button-cv,
-    #about .title, #about .column,
-    section#skills, #skills .title, #skills .cards,
-    section#portfolio, #portfolio .title, #portfolio .portfolio-content, #portfolio .cards-portfolio,
-    #footer #title-footer, #footer #text-footer, #footer .social-links
-  `,
-    { interval: 125 }
-  )
+  // scrollReveal.reveal(
+  //   `.logo, #home .text-3, #home .text-1, #home .text-2, #home .button-cv,
+  //   #about .title, #about .column,
+  //   section#skills, #skills .title, #skills .cards,
+  //   section#portfolio, #portfolio .title, #portfolio .portfolio-content, #portfolio .cards-portfolio,
+  //   #footer #title-footer, #footer #text-footer, #footer .social-links
+  // `,
+  //   { interval: 125 }
+  // )
 })

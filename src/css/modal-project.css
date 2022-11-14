@@ -1,17 +1,35 @@
 .modal {
+  background-color: #000000a6;
+  backdrop-filter: blur(5px);
+
+  height: 100vh;
+  width: 100vw;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: grid;
+  place-content: center;
+  z-index: 20;
+
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  display: flex;
+}
+
+.box-modal {
   display: flex;
   flex-direction: column;
-  width: 75%;
+
   padding: 2.5rem;
   gap: 1rem;
   background-color: var(--background-scrollbar);
   border-radius: 1rem;
-  animation: fade 1s;
-  position: fixed;
-  top: 50%;
-  left: 50%;
+  width: 80%;
   z-index: 5;
-  transform: translate(-50%, -50%);
+  max-height: 90vh;
 }
 
 .modal .top {
@@ -24,12 +42,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  text-align: left;
 }
 
 .modal .top .info .title-project {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .modal .top .info .title-project h2 {
@@ -66,7 +84,6 @@
 
 .modal .links a {
   display: inline-block;
-  width: fit-content;
   color: #F9F9F9;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
@@ -78,16 +95,9 @@
   transition: .1s;
 }
 
-body.transparent::after {
-  content: '';
-  width: 100%;
-  height: 1000%;
-  background-color: rgba(0, 0, 0, 0.65);
-  backdrop-filter: blur(3px);
-  display: block;
-  top: 0;
-  left: 0;
-  position: absolute;
-  z-index: 0;
-  animation: fade 1s;
+.modal .image-site img {
+  width: 27rem;
+  width: 27rem;
+  vertical-align: middle;
+  object-fit: fill;
 }
