@@ -195,13 +195,13 @@ $(document).ready(function () {
     duration: 1000
   })
 
-  // scrollReveal.reveal(
-  //   `.logo, #home .text-3, #home .text-1, #home .text-2, #home .button-cv,
-  //   #about .title, #about .column,
-  //   section#skills, #skills .title, #skills .cards,
-  //   section#portfolio, #portfolio .title, #portfolio .portfolio-content, #portfolio .cards-portfolio,
-  //   #footer #title-footer, #footer #text-footer, #footer .social-links
-  // `,
-  //   { interval: 125 }
-  // )
+  scrollReveal.reveal(
+    `.logo, #home .text-3, #home .text-1, #home .text-2, #home .button-cv,
+    #about .title, #about .column,
+    section#skills, #skills .title, #skills .cards,
+    section#portfolio, #portfolio .title, #portfolio .portfolio-content, #portfolio .cards-portfolio,
+    #footer #title-footer, #footer #text-footer, #footer .social-links
+  `,
+    { interval: 125 }
+  )
 })
