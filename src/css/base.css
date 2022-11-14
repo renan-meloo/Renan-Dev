@@ -127,3 +127,7 @@ p {
   -webkit-font-smoothing: auto;
   margin-bottom: .8rem;
 }
+
+.hidden {
+  display: none !important;
+}

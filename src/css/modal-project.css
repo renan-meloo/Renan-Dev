@@ -1,0 +1,103 @@
+.modal {
+  background-color: #000000a6;
+  backdrop-filter: blur(5px);
+
+  height: 100vh;
+  width: 100vw;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: grid;
+  place-content: center;
+  z-index: 20;
+
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  display: flex;
+}
+
+.box-modal {
+  display: flex;
+  flex-direction: column;
+
+  padding: 2.5rem;
+  gap: 1rem;
+  background-color: var(--background-scrollbar);
+  border-radius: 1rem;
+  width: 80%;
+  z-index: 5;
+  max-height: 90vh;
+}
+
+.modal .top {
+  display: flex;
+  align-items: center;
+  gap: 3.75rem;
+}
+
+.modal .top .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: left;
+}
+
+.modal .top .info .title-project {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal .top .info .title-project h2 {
+  font-size: 2.7rem;
+  font-weight: 500;
+  color: var(--background-blue);
+}
+
+.modal .top .info .title-project i {
+  cursor: pointer;
+  font-size: 1.8rem;
+  color: var(--background-blue);
+}
+
+.modal .top .info p {
+  font-family: 'Poppins' sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--title-color);
+  line-height: 140%;
+  padding: 1rem 0;
+}
+
+.modal .top .info span {
+  font-size: .9rem;
+  font-weight: 500;
+  color: var(--background-blue);
+}
+
+.modal .links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.modal .links a {
+  display: inline-block;
+  color: #F9F9F9;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: .8rem;
+  padding: .5rem 1rem;
+  background-image: linear-gradient(100deg, var(--background-blue) .2%, #1f1bd8 100%);
+  border-radius: 0.5rem;
+
+  transition: .1s;
+}
+
+.modal .image-site img {
+  width: 27rem;
+  width: 27rem;
+  vertical-align: middle;
+  object-fit: fill;
+}

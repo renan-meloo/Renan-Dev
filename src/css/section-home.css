@@ -120,7 +120,7 @@
 .section-home .button-cv a {
   font-size: .9rem;
   font-weight: 500;
-  color: var(--text-home);
+  color: var(--background-color);
   padding: .6rem 1.6rem;
   background-image: linear-gradient(100deg, var(--background-blue) .2%, #0400ff 100%);
   display: inline-flex;
