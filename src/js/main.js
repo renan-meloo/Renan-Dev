@@ -19,7 +19,7 @@ $(document).ready(function () {
         • Vanilla JavaScript; <br>
         • Node e NPM; <br>
         • ViteJS e iMask;`, 
-        imgSrc: 'assets/sites/capa-rocketpay2.png',
+        imgSrc: 'assets/sites/capa-rocketpay.png',
         repository: 'https://github.com/renan-meloo/RocketPays',
         site: 'https://rocketpay-lime.vercel.app/'
   
@@ -60,12 +60,12 @@ $(document).ready(function () {
     ]
 
   // Criação do Box de Projeto - Portfolio
-  function createProject(title, date){
+  function createProject(title, date, imgSrc){
     return `
   <div class="box" id="project-${title}">
   <div class="cover">
 
-    <img src="assets/sites/capa-${title}.png" alt="Imagem do projeto ${title}">
+    <img src="${imgSrc}" alt="Imagem do projeto ${title}">
     <div class="name-project">
       <p>${title}</p>
     </div>
@@ -91,13 +91,13 @@ $(document).ready(function () {
     </p>
 
     <div class="cards-portfolio">
-  ${createProject(dataProjects[0].title, dataProjects[0].date)}
+  ${createProject(dataProjects[0].title, dataProjects[0].date, dataProjects[0].imgSrc)}
 
-  ${createProject(dataProjects[1].title, dataProjects[1].date)}
+  ${createProject(dataProjects[1].title, dataProjects[1].date, dataProjects[1].imgSrc)}
 
-  ${createProject(dataProjects[2].title, dataProjects[2].date)}
+  ${createProject(dataProjects[2].title, dataProjects[2].date, dataProjects[2].imgSrc)}
 
-  ${createProject(dataProjects[3].title, dataProjects[3].date)}
+  ${createProject(dataProjects[3].title, dataProjects[3].date, dataProjects[3].imgSrc)}
 
     </div>
   </div>`
