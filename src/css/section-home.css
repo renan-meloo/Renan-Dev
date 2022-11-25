@@ -1,23 +1,23 @@
 /*======== MENU INÍCIO ========*/
 .navbar {
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   position: fixed;
   width: 100%;
-  padding: 20px 0;
+  padding: 1.25rem 0;
   z-index: 998;
   transition: all 0.3s ease;
 }
 
 .navbar.sticky {
   background: var(--background-blue);
-  padding: 10px 0;
+  padding: 0.625rem 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
-.navbar .max-width {
+.navbar .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
 }
 
 .navbar .logo a {
@@ -45,7 +45,7 @@
   color: var(--text-home);
   font-size: 1rem;
   font-weight: 500;
-  margin-left: 25px;
+  margin-left: 1.5625rem;
   transition: 0.3s;
 }
 
@@ -60,7 +60,7 @@
 /*======== MENU MOBILE ========*/
 .toggle {
   color: var(--background-color);
-  font-size: 28px;
+  font-size: 1.75rem;
   cursor: pointer;
   display: none;
 }
@@ -94,8 +94,11 @@
   min-height: 500px;
 }
 
-.section-home .max-width {
-  margin: auto 0 auto 7rem;
+.section-home .container {
+  padding-left: 4rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .section-home .home-content .text-1 {
@@ -118,14 +121,18 @@
 }
 
 .section-home .button-cv a {
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 500;
   color: var(--background-color);
-  padding: .6rem 1.6rem;
-  background-image: linear-gradient(100deg, var(--background-blue) .2%, #0400ff 100%);
+  padding: 0.6rem 1.3rem;
+  background-image: linear-gradient(
+    100deg,
+    var(--background-blue) 0.2%,
+    #0400ff 100%
+  );
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 2rem;
-  transition: .3s;
+  border-radius: 1.1rem;
+  transition: 0.3s;
 }

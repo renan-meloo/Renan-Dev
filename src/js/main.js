@@ -10,6 +10,21 @@ $(document).ready(function () {
 
   const dataProjects = [
     {
+      title: 'God Of War',
+      date: 'Novembro de 2022',
+      description: `Uma landing page, baseada no game "God of War" que reúne os principais conceitos do Front-end. Além de ser totalmente responsiva para diferentes tamanhos de tela.<br><br>
+      Esse projeto foi desenvolvido com as seguintes ferramentas: <br>
+
+      • HTML5 & SASS; <br>
+      • Vanilla JavaScript; <br>
+      • Node e NPM; <br>
+      • Swiper JS;`,
+      imgSrc: 'assets/sites/capa-god-of-war.png',
+      repository: 'https://github.com/renan-meloo/god-of-war',
+      site: 'https://god-of-war-two.vercel.app/'
+
+    },
+    {
       title: 'RocketPay',
       date: 'Outubro de 2022',
       description: `O RocketPay é um componente que simula o formulário de preenchimento de cartão de crédito, onde é possível adicionar máscara aos inputs e atualizar elementos HTML via DOM. <br><br>
@@ -20,7 +35,7 @@ $(document).ready(function () {
       • Node e NPM; <br>
       • ViteJS e iMask;`,
       imgSrc: 'assets/sites/capa-rocketpay.png',
-      repository: 'https://github.com/renan-meloo/RocketPays',
+      repository: 'https://github.com/renan-meloo/rocketpays',
       site: 'https://rocketpay-lime.vercel.app/'
 
     },
@@ -34,7 +49,7 @@ $(document).ready(function () {
       • Vanilla JavaScript; <br>
       • CSS3; <br>`,
       imgSrc: 'assets/sites/capa-getkcal.png',
-      repository: 'https://github.com/renan-meloo/Getkcal',
+      repository: 'https://github.com/renan-meloo/getkcal',
       site: 'https://getkcal-one.vercel.app/'
 
     },
@@ -80,6 +95,7 @@ $(document).ready(function () {
   }
 
   const layoutProject = `
+  <div class="container">
   <div class="title">
   <h2>PORTFOLIO</h2>
   </div>
@@ -99,8 +115,12 @@ $(document).ready(function () {
 
   ${createProject(dataProjects[3].title, dataProjects[3].date, dataProjects[3].imgSrc)}
 
+  ${createProject(dataProjects[4].title, dataProjects[4].date, dataProjects[4].imgSrc)}
+
   </div>
-  </div>`
+  </div>
+  </div>
+  `
 
   const portfolio = document.getElementById('portfolio');
 
