@@ -6,9 +6,8 @@ section#portfolio .portfolio-content p {
 section#portfolio .portfolio-content .cards-portfolio {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-around;
-  gap: 3rem;
+  gap: 1.2rem;
   padding: 2rem 0 1rem 0;
 }
 

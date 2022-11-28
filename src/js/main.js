@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
   // BARRA AZUL NO MENU AO DESCER
   $(window).scroll(function () {
     if (this.scrollY > 20) {
@@ -7,6 +8,41 @@ $(document).ready(function () {
       $('.navbar').removeClass('sticky')
     }
   })
+
+  // Criação do Box - Skills
+  function createSkill(title, iconSrc){
+    return `
+    <div class="box">
+    <p class="title-box">${title}</p>
+    <img src="${iconSrc}" alt="${title}">
+    </div>
+    `
+  }
+
+  const layoutSkills = `
+  <div class="container">
+  <div class="title">
+  <h2>HABILIDADES</h2>
+  </div>
+
+  <div class="skills-content">
+  <div class="cards">
+  ${createSkill('JavaScript', 'assets/languages/logo-javascript.svg')}
+
+  ${createSkill('HTML5', 'assets/languages/logo-html5.svg')}
+
+  ${createSkill('CSS3', 'assets/languages/logo-css.svg')}
+
+  ${createSkill('Figma', 'assets/languages/logo-figma.svg')}
+  </div>
+  </div>
+  </div>
+  `
+
+
+  const skills = document.getElementById('skills');
+
+  skills.innerHTML = layoutSkills;
 
   const dataProjects = [
     {
@@ -77,7 +113,7 @@ $(document).ready(function () {
   // Criação do Box de Projeto - Portfolio
   function createProject(title, date, imgSrc){
     return `
-    <div class="box" id="project-${title}">
+    <div class="box">
     <div class="cover">
 
     <img src="${imgSrc}" alt="Imagem do projeto ${title}">

@@ -104,13 +104,12 @@
     backdrop-filter: blur(10px);
 
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 
     position: fixed;
     top: 0;
     left: 0;
 
-    display: grid;
     place-content: center;
 
     z-index: 997;
@@ -118,10 +117,8 @@
     visibility: hidden;
     opacity: 0;
 
-    align-items: center;
-    align-content: center;
-    text-align: center;
     display: flex;
+    align-items: center;
     flex-direction: column;
 
     transition: 0.5s;
@@ -138,6 +135,7 @@
     color: var(--text-home);
     font-size: 2.4rem;
     transition: 0.3s;
+    margin-left: 0;
   }
 
   .navbar .menu li a:hover {
