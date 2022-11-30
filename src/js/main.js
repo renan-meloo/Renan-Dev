@@ -217,6 +217,23 @@ $(document).ready(function () {
         item.addEventListener('click', addData)
       })
 
+      function createBoxSocial(linkSocial, iconName) {
+        return `
+        <a href="${linkSocial}" target="_blank" class="box-social">
+        <ion-icon name="${iconName}"></ion-icon></i>
+        </a>
+        `
+      }
+
+      const layoutBoxSocial = `
+      ${createBoxSocial('https://wa.me/55085989176707', 'logo-whatsapp')}
+      ${createBoxSocial('https://www.linkedin.com/in/renan-meloo/', 'logo-linkedin')}
+      ${createBoxSocial('https://github.com/renan-meloo', 'logo-github')}
+      ${createBoxSocial('mailto:renan.meloo.710@gmail.com', 'mail-outline')}
+      `
+
+      const socialLinks = document.querySelector('.social-links');
+      socialLinks.innerHTML = layoutBoxSocial;
 
       // ABRIR E FECHAR MENU
       $('.toggle').click(function () {
@@ -264,4 +281,4 @@ $(document).ready(function () {
         `,
         { interval: 125 }
         )
-      })
+  })
